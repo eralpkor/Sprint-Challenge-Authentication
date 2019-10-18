@@ -2,6 +2,7 @@ const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
+const secrets = require('../config/secrets');
 const Users = require('./auth-model');
 
 router.post('/register', (req, res) => {
@@ -53,7 +54,7 @@ function generateToken(user) {
   const options = {
     expiresIn: '1d',
   };
-  return jwt.sign(payload, process.env.JWT_SECRET, options)
+  return jwt.sign(payload, secrets.jwtSecret, options)
 }
 
 
