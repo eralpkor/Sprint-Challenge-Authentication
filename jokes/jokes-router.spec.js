@@ -33,18 +33,4 @@ describe('GET /api/jokes', () => {
 });
 
 
-  // it('should return 200', async () => {
-  //   const authorization = await supertest(server)
-  //     .post('/api/aut/register')
-  //     .send({ username: 'sunny', password: 'pass'});
-
-  //     expect(authorization.status).toBe(201);
-
-  //     const jokes = await supertest(server)
-  //       .get('/api/jokes')
-  //       .set('authorization', authorization.body.token);
-
-  //     expect(jokes.status).toBe(200);
-  //     expect(jokes.type).toMatch(/json/i);
-  // });
 
