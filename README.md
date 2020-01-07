@@ -40,11 +40,28 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+* HTTP is stateless so no sessions information is kept by the receiver. With sessions
+* we can store data between HTTP requests. Cookies and URL params are both suitable ways to 
+* transport data between the client and the server. But they both readable, sessions solve this
+* problem. We assign an ID to client and make all further requests using that ID. Information
+* associated with the client is stored on the server linked to this ID.
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+* If we have sensitive data or information that we need to be protected,  bcrypt hashes
+* the sensitive information like passwords and protect it from password cracking.
 
 - [ ] What does bcrypt do to slow down attackers?
 
+* It takes more time to hash the value, it also takes a much longer time to brute-force the password.
+
 - [ ] What are the three parts of the JSON Web Token?
+
+* The header.
+* The payload.
+* The signature.
+
+
 
 ## Minimum Viable Product
 
